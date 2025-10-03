@@ -36,48 +36,48 @@ class Blog_List_Add_Update
     public function set_information_data($get_information_data)
     {
      $this->information_data = $get_information_data; 
-     $this->sql_update_query = ",information_data=" .$this->information_data; 
+     $this->sql_update_query = ",information_data='" .$this->information_data . "'"; 
     }
 
     public function set_heading($get_heading)
     {
      $this->heading = $get_heading;  
-     $this->sql_update_query = $this->sql_update_query . ",heading=" .$this->heading; 
+     $this->sql_update_query = $this->sql_update_query . ",heading='" .$this->heading . "'"; 
     }
 
     public function set_seo_dis($get_seo_dis)
     {
      $this->seo_dis = $get_seo_dis; 
-     $this->sql_update_query = $this->sql_update_query . ",seo_dis=".$this->seo_dis; 
+     $this->sql_update_query = $this->sql_update_query . ",seo_dis='".$this->seo_dis . "'"; 
     }
 
     public function set_url_data($get_url_data)
     {
      $this->url_data = $get_url_data; 
-     $this->sql_update_query = $this->sql_update_query . ",url_data=".$this->url_data; 
+     $this->sql_update_query = $this->sql_update_query . ",url_data='".$this->url_data . "'"; 
     }
 
     public function set_image_path($get_image_path)
     {
      $this->image_path = $get_image_path; 
-     $this->sql_update_query = $this->sql_update_query . ",image_path=" .$this->image_path;
+     $this->sql_update_query = $this->sql_update_query . ",image_path='" .$this->image_path . "'";
     }
 
-    public function is_pic_available()
+    public function is_pic_available($get_is_pic_available)
     {
      $this->is_pic_available = $get_is_pic_available; 
-     $this->sql_update_query = $this->sql_update_query . ",is_pic_available=" .$this->is_pic_available; 
+     $this->sql_update_query = $this->sql_update_query . ",is_pic_available='" .$this->is_pic_available . "'"; 
     }
 
     public function is_not_pic_available()
     {
      $this->is_pic_available = "0"; 
-     $this->sql_update_query = $this->sql_update_query . ",is_pic_available=" .$this->is_pic_available; 
+     $this->sql_update_query = $this->sql_update_query . ",is_pic_available='" .$this->is_pic_available . "'"; 
     } 
 
     public function remove()
     {
-        $this->ast="0"
+        $this->ast="0";
     }
     
     public function get_id()
