@@ -7,7 +7,7 @@ class blog_List_SINGLE_DATA
     private $ast;
     private $sdt;
     private $heading;
-    private $infomation_data;
+    private $information_data;
     private $image_path;
     private $url_data;
     private $main_user_login_id;
@@ -29,7 +29,7 @@ class blog_List_SINGLE_DATA
             $this->ast = $row['ast'];
             $this->sdt = $row['sdt'];
             $this->heading = $row['heading'];
-            $this->infomation_data = $row['infomation_data'];
+            $this->information_data = $row['information_data'];
             $this->image_path = $row['image_path'];
             $this->url_data = $row['url_data'];
             $this->main_user_login_id = $row['main_user_login_id'];
@@ -60,9 +60,9 @@ class blog_List_SINGLE_DATA
     {
         return $this->heading;
     }
-    public function get_infomation_data()
+    public function get_information_data()
     {
-        return $this->infomation_data;
+        return $this->information_data;
     }
     public function get_image_path()
     {
