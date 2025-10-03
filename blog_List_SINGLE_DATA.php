@@ -26,7 +26,7 @@ class blog_List_SINGLE_DATA_URL
         $result = $this->data_base_obj->get_result($get_sql_query);
 
         while ($row = $result->fetch_assoc()) {
-            $this->avble_boo = true;
+            $this->available_boo = true;
             $this->id = $row['id'];
             $this->ast = $row['ast'];
             $this->sdt = $row['sdt'];
